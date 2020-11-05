@@ -1,4 +1,4 @@
-<h2>Products</h2>
+<h2>Menu</h2>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
@@ -6,7 +6,7 @@ Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 -->
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products | async">
   <h3>
     <a
       [title]="product.name + ' details'"
